@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>array</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+    max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Array</h1>
+  </header>
+
+  <main>
+    <section>
+        <h2>Array</h2>
+        <p>
+            An array is defined as the collection of similar type of data items stored at contiguous memory locations. 
+        </p>
+        <h2>Types of Array</h2>
+        <pre>
+            1. 1-D array
+            2. 2-D array
+        </pre>
+        <p>
+            <h2>1-D array</h2>
+            <p>Declaration</p>
+            <pre>
+                data_type array_name[array_size]; 
+            </pre>
+            <p>Initialisation</p>
+            <pre>
+                marks[0]=80;//initialization of array  
+                marks[1]=60;  
+                marks[2]=70;  
+                marks[3]=85;  
+                marks[4]=75;    
+            </pre>
+            <p>Example</p>
+            <pre>
+                <code>
+                     
+                        int main(){      
+                        int i=0;    
+                        int marks[5];//declaration of array       
+                        marks[0]=80;//initialization of array    
+                        marks[1]=60;    
+                        marks[2]=70;    
+                        marks[3]=85;    
+                        marks[4]=75;    
+                        //traversal of array    
+                        for(i=0;i<5;i++){      
+                        printf("%d \n",marks[i]);    
+                        }//end of for loop     
+                        return 0;  }
+                         
+                </code>
+            </pre>
+        </p>
+      </section>
+      <section>
+        <h2>2-D array</h2>
+        <p>The two-dimensional array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. </p>
+        <h3>Declaration</h3>
+        <pre>data_type array_name[rows][columns];</pre>
+        <p>
+            <h2>Example</h2>
+            <pre>
+                <code>
+                    int main(){      
+                        int i=0,j=0;    
+                        int arr[4][3]={{1,2,3},{2,3,4},{3,4,5},{4,5,6}};     
+                        //traversing 2D array    
+                        for(i=0;i<4;i++){    
+                         for(j=0;j<3;j++){    
+                           printf("arr[%d] [%d] = %d \n",i,j,arr[i][j]);    
+                         }//end of j    
+                        }//end of i    
+                        return 0;  
+                        }    
+                     
+                </code>
+            </pre>
+        </p>
+    
+    </section>
+    <section>
+      <h2>Adavantages</h2>
+      <ul>
+        <li>Code optimisation</li>
+        <li>Traversal is easy</li>
+        <li>Element can be accessed randomly</li>
+      </ul>
+      <h2>Disadvantage</h2>
+      <ul><li>Fixed size</li></ul>
+    </section>
+    
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Basic Programming Study</p>
+  </footer>
+</body>
+
+</html>

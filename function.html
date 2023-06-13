@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>function</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+    max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Function</h1>
+  </header>
+
+  <main>
+    <section>
+        <h2>Function</h2>
+        <p>
+            A large program into the basic building blocks known as function. The function contains the set of programming statements enclosed by {}.
+        </p>
+        <h2>Types of Function</h2>
+        <pre>
+            1. Built-in function
+            2. User-defined function
+        </pre>
+        <p>
+            <h2>Built-in function</h2>
+            <p>are the functions which are declared in the C header files such as scanf(), printf(), gets(), puts(), ceil(), floor() etc.</p>
+        </p>
+        </section>
+      <section>
+        <h2>User-defined function</h2>
+        <p>These functions are defined by the user when writing the program.</p>
+        <p>
+            <h2>Example</h2>
+            <pre>
+                <code>
+int addition();
+
+int main()
+{   
+    //local variable definition
+    int answer;
+    
+    answer = addition(); //calling a function to get addition value.
+    printf("The addition of the two numbers is: %d\n",answer);
+    return 0;
+}
+
+//function returning the addition of two numbers
+int addition()
+{
+    int num1 = 10, num2 = 5; // local variable definition
+    return num1+num2;
+}
+                </code>
+            </pre>
+        </p>
+    
+    </section>
+    <section>
+      <h2>Adavantages</h2>
+      <ul>
+        <li>Reusable</li>
+        <li>Can call function any number of times</li>
+        <li>Divide program into multiple function</li>
+      </ul>
+      
+    </section>
+    
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Basic Programming Study</p>
+  </footer>
+</body>
+
+</html>

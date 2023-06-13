@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Programs</title>
+<style>
+      body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+    max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+  <header>
+    <h1>Basic Programs</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Prime Number</h2>
+      <p>A prime number is a positive integer greater than 1 that has no positive divisors other than 1 and itself.</p>
+      <p>Example:</p>
+      <pre><code>#include &lt;stdio.h&gt;
+
+int isPrime(int number) {
+  if (number <= 1) {
+    return 0;
+  }
+
+  for (int i = 2; i <= number / 2; i++) {
+    if (number % i == 0) {
+      return 0;
+    }
+  }
+
+  return 1;
+}
+
+int main() {
+  int number;
+  printf("Enter a number: ");
+  scanf("%d", &number);
+
+  if (isPrime(number)) {
+    printf("%d is a prime number.\n", number);
+  } else {
+    printf("%d is not a prime number.\n", number);
+  }
+
+  return 0;
+}</code></pre>
+    </section>
+    <section>
+        <h2>Factorial Program</h2>
+        <p>The factorial of a non-negative integer n is the product of all positive integers less than or equal to n.</p>
+        <p>Example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+  
+  unsigned long long factorial(unsigned int n) {
+    if (n == 0)
+      return 1;
+    else
+      return n * factorial(n - 1);
+  }
+  
+  int main() {
+    unsigned int num = 5;
+    unsigned long long fact = factorial(num);
+    
+    printf("Factorial of %u = %llu\n", num, fact);
+    
+    return 0;
+  }</code></pre>
+      </section>
+      <section>
+        <h2>Palindrome Number Program</h2>
+        <p>A palindrome number is a number that remains the same when its digits are reversed.</p>
+        <p>Example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+  
+  int isPalindrome(int num) {
+    int originalNum = num;
+    int reversedNum = 0;
+    
+    while (num != 0) {
+      int remainder = num % 10;
+      reversedNum = reversedNum * 10 + remainder;
+      num /= 10;
+    }
+    
+    if (originalNum == reversedNum)
+      return 1;  // It is a palindrome number
+    else
+      return 0;  // It is not a palindrome number
+  }
+  int main() {
+    int num = 12321;
+    
+    if (isPalindrome(num))
+      printf("%d is a palindrome number.\n", num);
+    else
+      printf("%d is not a palindrome number.\n", num);
+    
+    return 0;
+  }</code></pre>
+      </section>
+  
+    <section>
+      <h2>Armstrong Number</h2>
+      <p>An Armstrong number is a number that is equal to the sum of its digits raised to the power of the number of digits.</p>
+      <p>Example:</p>
+      <pre><code>#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int isArmstrong(int number) {
+  int originalNumber = number;
+  int sum = 0;
+  int digits = 0;
+
+  while (number != 0) {
+    number /= 10;
+    digits++;
+  }
+
+  number = originalNumber;
+
+  while (number != 0) {
+    int digit = number % 10;
+    sum += pow(digit, digits);
+    number /= 10;
+  }
+
+  return (sum == originalNumber);
+}
+
+int main() {
+  int number;
+  printf("Enter a number: ");
+  scanf("%d", &number);
+
+  if (isArmstrong(number)) {
+    printf("%d is an Armstrong number.\n", number);
+  } else {
+    printf("%d is not an Armstrong number.\n", number);
+  }
+
+  return 0;
+}</code></pre>
+    </section>
+    <section>
+        <h2>Fibonacci Series</h2>
+        <p>The Fibonacci series is a sequence of numbers in which each number is the sum of the two preceding ones.</p>
+        <p>Example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+  
+  int main() {
+    int n, first = 0, second = 1, next, i;
+  
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+  
+    printf("Fibonacci Series: ");
+  
+    for (i = 0; i < n; i++) {
+      if (i <= 1)
+        next = i;
+      else {
+        next = first + second;
+        first = second;
+        second = next;
+      }
+  
+      printf("%d ", next);
+    }
+  
+    return 0;
+  }</code></pre>
+      </section>
+  
+      <section>
+        <h2>Sum of Digits</h2>
+        <p>The sum of digits program calculates the sum of all the individual digits of a given number.</p>
+        <p>Example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+  
+  int main() {
+    int number, sum = 0, remainder;
+  
+    printf("Enter a number: ");
+    scanf("%d", &number);
+  
+    while (number != 0) {
+      remainder = number % 10;
+      sum += remainder;
+      number /= 10;
+    }
+  
+    printf("Sum of digits: %d\n", sum);
+  
+    return 0;
+  }</code></pre>
+      </section>
+  
+      <section>
+        <h2>Reverse a Number</h2>
+        <p>The reverse a number program reverses the digits of a given number.</p>
+        <p>Example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+  
+  int main() {
+    int number, reversed = 0, remainder;
+  
+    printf("Enter a number: ");
+    scanf("%d", &number);
+  
+    while (number != 0) {
+      remainder = number % 10;
+      reversed = reversed * 10 + remainder;
+      number /= 10;
+    }
+  
+    printf("Reversed number: %d\n", reversed);
+  
+    return 0;
+  }</code></pre>
+      </section>
+
+    <!-- More examples -->
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2023 Basic Programming Study</p>
+  </footer>
+</body>
+
+</html>

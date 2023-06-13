@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Eligibility Form</title>
+    <link rel="stylesheet" href="sign.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <script>
+    function eligiblecheck()
+        {
+        var name=document.forms.eligibleform.name.value;
+        var mark1=document.forms.eligibleform.mark1.value;
+        var mark2=document.forms.eligibleform.mark2.value;
+        var mark3=document.forms.eligibleform.mark3.value;
+        if(name==" ")
+        {
+          window.alert("Please enter your name");
+          name.focus();
+        }
+        if(mark1=="")
+        {
+          window.alert("Please enter your 10th percentage");
+          mark1.focus(); 
+        }
+        if(mark2=="")
+        {
+        window.alert("Please enter your 12th percentage");
+        mark2.focus();
+        }
+        if(mark3=="")
+        {
+        window.alert("Please enter your cgpa");
+        mark3.focus();
+        }
+        if(mark1 >=70 && mark2>=70 &&mark3>=70 )
+        {
+          window.alert("You are eligibile");
+        }
+        else{
+          window.alert("You are not eligibile");        
+        }
+        }
+   </script>
+<body>
+  <div class="container">
+    <div class="title">Your eligibility!</div>
+    <div class="content">
+      <form action="#"name="eligibleform"onsubmit="return eligiblecheck()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">HSC</span>
+            <input type="text" id="mark1"class="mark1"placeholder="%(Without float)" required>
+          </div>
+          <div class="input-box">
+            <span class="details">SSLC</span>
+            <input type="text" id="mark2"class="mark2"placeholder="%(without float)" required>
+          </div>
+          <div class="input-box">
+            <span class="details">CGPA</span>
+            <input type="text"id="mark3"class="mark3" placeholder="upto current semester" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Check">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

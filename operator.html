@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operators in C</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+    max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Operators in C</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Arithmetic Operators</h2>
+      <p>Arithmetic operators are used to perform mathematical operations in C.</p>
+      <p>Example:</p>
+      <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+  int a = 10;
+  int b = 5;
+  int sum = a + b;
+  int product = a * b;
+  
+  printf("Sum: %d\n", sum);
+  printf("Product: %d\n", product);
+  
+  return 0;
+}</code></pre>
+      <p>In the above example:</p>
+      <ul>
+        <li><code>a</code> and <code>b</code> are initialized with the values 10 and 5, respectively.</li>
+        <li><code>sum</code> is assigned the sum of <code>a</code> and <code>b</code> (10 + 5).</li>
+        <li><code>product</code> is assigned the product of <code>a</code> and <code>b</code> (10 * 5).</li>
+        <li>The <code>printf</code> function is used to print the values of <code>sum</code> and <code>product</code>.</li>
+      </ul>
+    </section>
+    <section>
+        <h2>Ternary Operator</h2>
+        <p>The ternary operator (? :) is a shorthand way of writing an if-else statement.</p>
+        <p>Example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+  
+  int main() {
+    int age = 20;
+    char* message = (age >= 18) ? "You are an adult." : "You are not an adult.";
+    
+    printf("%s\n", message);
+    
+    return 0;
+  }</code></pre>
+        <p>In the above example:</p>
+        <ul>
+          <li>The variable <code>age</code> is initialized with the value 20.</li>
+          <li>The ternary operator is used to assign the value of <code>message</code> based on the condition <code>age >= 18</code>.</li>
+          <li>If the condition is true, the value "You are an adult." is assigned to <code>message</code>. Otherwise, the value "You are not an adult." is assigned.</li>
+          <li>The <code>printf</code> function is used to print the value of <code>message</code>.</li>
+        </ul>
+      </section>
+  
+      <section>
+        <h2>Relational Operators</h2>
+        <p>Relational operators are used to compare values in C.</p>
+        <p>Example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+  
+  int main() {
+    int a = 10;
+    int b = 5;
+    
+    if (a > b) {
+      printf("a is greater than b\n");
+    } else {
+      printf("a is not greater than b\n");
+    }
+    
+    return 0;
+  }</code></pre>
+      </section>
+      <section>
+        <h2>Logical Operators</h2>
+        <p>Logical operators are used to perform logical operations in C.</p>
+        <p>
+            <h4>Types</h4>
+            <ul>
+               <li>Logical OR(||)</li> 
+                <li>Logical AND (&&)</li>
+                <li>Negation(!)</li>
+            </ul>
+        </p>
+        <p>Example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+  
+  int main() {
+    int a = 5;
+    int b = 10;
+    
+    if (a > 0 && b < 20) {
+      printf("Both conditions are true\n");
+    }
+    
+    if (a > 0 || b < 20) {
+      printf("At least one condition is true\n");
+    }
+    
+    if (!(a > 10)) {
+      printf("Negation of condition is true\n");
+    }
+    
+    return 0;
+  }</code></pre>
+      </section>
+      <section>
+        <h2>Shift Operators</h2>
+        <p>Shift operators are used to shift the bits of a value in C.</p>
+        <p>Example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+  
+  int main() {
+    int a = 5;  // Binary: 00000101
+    
+    int leftShift = a << 2;  // Binary: 00010100 (20 in decimal)
+    int rightShift = a >> 2;  // Binary: 00000001 (1 in decimal)
+    
+    printf("Left Shift: %d\n", leftShift);
+    printf("Right Shift: %d\n", rightShift);
+    
+    return 0;
+  }</code></pre>
+      </section>
+
+      <section>
+        <h2>Assignment Operators</h2>
+        <p>Assignment operators are used to assign values to variables.</p>
+        <p>Example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+  
+  int main() {
+    int x = 5;
+    int y = 10;
+    
+    x += y; // Equivalent to: x = x + y;
+    printf("x: %d\n", x);
+    
+    y *= 2; // Equivalent to: y = y * 2;
+    printf("y: %d\n", y);
+    
+    return 0;
+  }</code></pre>
+        <p>In the above example:</p>
+        <ul>
+          <li>The variables <code>x</code> and <code>y</code> are initialized with the values 5 and 10, respectively.</li>
+          <li>The assignment operator <code>+=</code> is used to add the value of <code>y</code> to <code>x</code> and update the value of <code>x</code> accordingly.</li>
+          <li>The assignment operator <code>*=</code> is used to multiply the value of <code>y</code> by 2 and update the value of <code>y</code> accordingly.</li>
+          <li>The <code>printf</code> function is used to print the values of <code>x</code> and <code>y</code>.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Bitwise Operator</h2>
+        <section>
+            <h3>Bitwise AND Operator (&amp;)</h3>
+            <p>The bitwise AND operator performs a bitwise AND operation on the binary representation of two operands.</p>
+            <p>Example:</p>
+            <pre><code>#include &lt;stdio.h&gt;
+      
+      int main() {
+        unsigned int a = 5;  // binary: 00000101
+        unsigned int b = 3;  // binary: 00000011
+        
+        unsigned int result = a &amp; b;
+        
+        printf("Result: %u\n", result);  // binary: 00000001
+        
+        return 0;
+      }</code></pre>
+          </section>
+      
+          <section>
+            <h3>Bitwise OR Operator (|)</h3>
+            <p>The bitwise OR operator performs a bitwise OR operation on the binary representation of two operands.</p>
+            <p>Example:</p>
+            <pre><code>#include &lt;stdio.h&gt;
+      
+      int main() {
+        unsigned int a = 5;  // binary: 00000101
+        unsigned int b = 3;  // binary: 00000011
+        
+        unsigned int result = a | b;
+        
+        printf("Result: %u\n", result);  // binary: 00000111
+        
+        return 0;
+      }</code></pre>
+          </section>
+      
+          <section>
+            <h3>Bitwise XOR Operator (^)</h3>
+            <p>The bitwise XOR operator performs a bitwise exclusive OR operation on the binary representation of two operands.</p>
+            <p>Example:</p>
+            <pre><code>#include &lt;stdio.h&gt;
+      
+      int main() {
+        unsigned int a = 5;  // binary: 00000101
+        unsigned int b = 3;  // binary: 00000011
+        
+        unsigned int result = a ^ b;
+        
+        printf("Result: %u\n", result);  // binary: 00000110
+        
+        return 0;
+      }</code></pre>
+          </section>
+      </section>
+
+    <!-- More types of operators -->
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Basic Programming Study</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accenture</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: Georgia, 'Times New Roman', Times, serif}
+.btn{
+background-color: papayawhip;
+border-color:black;
+}
+</style>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();">Menu</button>
+  <span class="w3-bar-item w3-right" style="font-size: 28pxpx;">Accenture</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="ac_his.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-history fa-fw"></i>History</a>
+    <a href="ac_prep.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>Preparation</a>
+    <a href="ac_con.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-address-book"></i>Contact</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <h5><b>Headquarters</b></h5>
+        <img src="acce1.jpg" style="width:100%;height:200px">
+      </div>
+      <div class="w3-twothird">
+        <h5><b>Company</b></h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <p>Accenture is multinational management consulting, technology services and outsourcing company. 
+                It is located in Dublin, Ireland and was founded in 1989. It is specialized in offering 
+                professional services in business strategy, consulting, digital, technology, and operations.</p>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5><B>Freshers</B></h5>
+    <p>Eligibility</p>
+    <div class="w3-white">
+        <ul>
+            <li>65% or above in class 12th standard.</li>
+            <li>6.5 CGPA or above in current semesters</li>
+            <li>No arrears are allowed</li>
+            <li>If you have done your graduation in any of these then you are eligible to apply for this job.
+                 B.E/ B.Tech/MCA/MSC in any discipline</li>
+            <li>A maximum gap of 1 year is permissible after HSC(12th) and not after SSC(10th) or in between semesters of graduation.</li>
+        </ul>
+        <button class="btn" style="margin-left: 20px;margin-bottom: 20px;"onclick="location.href='form.html'">Check Your Eligibility</button>
+        <button class="btn" style="margin-left: 20px;margin-bottom: 20px;"onclick="location.href='eligib_test.html'">Take Test</button>
+
+      </div>
+    <p>Skills</p>
+    <div class="w3-white">
+      <div>
+        <ul>
+            <li>ASP.NET</li>
+            <li>MICROSOFT.NET,ARCHITECTURE</li>
+            <li>SQL</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="w3-container">
+    <h5><b>Countries</b></h5>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+        <tr>
+            <td>India</td>
+        </tr>
+        <tr>
+        <td>United States</td>
+      </tr>
+      <tr>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <td>China</td>
+      </tr>
+      <tr>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Brazil</td>
+      </tr>
+      <tr>
+        <td>Nigeria</td>
+      </tr>
+      <tr>
+        <td>Italy</td>
+      </tr>
+      <tr>
+        <td>Norway</td>
+      </tr>
+    </table><br>
+  </div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitude</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: Georgia, 'Times New Roman', Times, serif}
+.btn{
+background-color: papayawhip;
+}
+.w_panel
+{
+margin:0px 0px 0px 100px;
+}
+.w_panel p{
+line-height:32px;
+}
+.w_panel h2{
+padding:25px 0px 0px 0px;
+}
+
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right" style="font-size: 28pxpx;">Aptitude</span>
+</div>
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="ac_code.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>Coding</a>
+  </div>
+</nav>
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<div class="w_panel">
+<h2 onclick="location.href='z_train.html'">Problems on Train</h2>
+<p>
+  Train problem is a type of mathematical problem that involves the motion and interactions of trains or vehicles traveling on tracks.
+<br>
+Important Factors are:<br>
+<b>
+  <ol>
+    <li>Speed</li>
+    <li>Distance</li>
+    <li>Time</li>
+  </ol>
+</b>
+
+
+</p>
+<button type="button" class="btn btn-primary" href="index.html" ><a style="color:white;text-decoration:none;font-weight:bold" href="ac_num.html">Take Test</a></button>
+</div>
+<div class="w_panel">
+<h2 onclick="location.href='z_percentage.html'">Percentage</h2>
+<p>
+Many people tend to struggle with percentages as there are many things included in them such as the calculation of complex concepts of <b>profit and loss, compound interest, discounts, etc.  </b></p>
+
+<button type="button" class="btn btn-primary" href="index.html" ><a style="color:white;text-decoration:none;font-weight:bold" href="ac_perc.html">Take Test</a></button>
+</div>
+<div class="w_panel">
+<h2 onclick="location.href='z_profitnloss.html'">Profit and Loss</h2>
+<p>
+Another crucial topic in the quantitative aptitude section is Profit and loss and the candidate who wants to successfully clear the aptitude exam must have a better understanding of this particular topic. </p>
+
+<button type="button" class="btn btn-primary" href="index.html" ><a style="color:white;text-decoration:none;font-weight:bold" href="ac_profit.html">Take Test</a></button>
+</div>
+<div class="w_panel">
+<h2 onclick="location.href='z_mixture.html'">Mixture and Alligation</h2>
+<p>
+Mixture and Alligation are useful topics of quantitative aptitude that are used for determining the ratio and cost of two materials mixed together. In most of the competitive exams question from this category is given to test the capabilities of the candidate. </p>
+
+<button type="button" class="btn btn-primary" href="index.html" ><a style="color:white;text-decoration:none;font-weight:bold" href="ac_mix.html">Take Test</a></button>
+</div>
+<div class="w_panel">
+<h2 onclick="location.href='z_average.html'">Average</h2>
+<p>
+We never liked taking out the average of numbers while in school and sometimes skip the topic for studying the tough ones. </p>
+
+<button type="button" class="btn btn-primary" href="index.html" ><a style="color:white;text-decoration:none;font-weight:bold" href="ac_avg.html">Take Test</a></button>
+</div>
+
+
+ 
+           
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
