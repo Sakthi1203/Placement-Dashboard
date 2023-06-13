@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitude</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: Georgia, 'Times New Roman', Times, serif}
+.btn{
+background-color: papayawhip;
+border-color:black;
+}
+.w_panel
+{
+margin:0px 0px 0px 100px;
+}
+.w_panel p{
+line-height:32px;
+}
+.w_panel h2{
+padding:25px 0px 0px 0px;
+}
+
+</style>
+<script>
+function Fun1() {
+  var x = document.getElementById("d1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun2() {
+  var x = document.getElementById("d2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun3() {
+  var x = document.getElementById("d3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun4() {
+  var x = document.getElementById("d4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun5() {
+  var x = document.getElementById("d5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right" style="font-size: 28pxpx;">Questions</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="Cprogram.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-history fa-fw"></i>Coding</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<div class="w_panel">
+<h2>volume and surface area- General Questions</h2>
+
+<p><b>
+1. The curved surface area of a cylindrical pillar is 264 m2 and its volume is 924 m3. Find the ratio of its diameter to its height.</b>
+<p>A. 3 :7</p>
+<p>B. 7:3</p>
+<p>C. 6:7</p>
+<p>D. 7:6</p>
+<button type="button" class="btn btn-primary" onclick="Fun1()" >Show Answer</button>
+<div id="d1" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+pir^2h/2pirh	=	924/264	    -->     r =		(924/264	x 2)	= 7 m.
+
+<br>
+
+And, 2rh = 264      -->    h =(264 x 7/22 x 1/2 x 1/7) = 6m.
+
+
+<br>
+
+Required ratio =	2r/h	= 14/6	= 7 : 3.
+
+<br>
+ </p></div>
+<hr></hr>
+
+<p><b>
+2.A cistern of capacity 8000 litres measures externally 3.3 m by 2.6 m by 1.1 m and its walls are 5 cm thick. The thickness of the bottom is:</b>
+</p>
+<p>A. 90cm
+</p>
+<p>B. 1dm
+</p>
+<p>C. 1m
+</p>
+<p>D. 1.1cm
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun2()" >Show Answer</button>
+<div id="d2" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+ <p>
+Let the thickness of the bottom be x cm.
+
+<br>
+  
+Then, [(330 - 10) x (260 - 10) x (110 - x)] = 8000 x 1000
+
+<br>
+
+
+ 320 x 250 x (110 - x) = 8000 x 1000
+
+<br>
+
+
+ (110 - x) =	8000 x 1000/(320 x 250)	= 100
+
+<br>
+ x = 10 cm = 1 dm.
+
+<br>
+
+
+
+
+
+ 
+</p></div>
+<hr></hr>
+
+<p><b>
+3. What is the total surface area of a right circular cone of height 14 cm and base radius 7 cm?</b></p>
+<p>A. 344.35 cm2
+</p>
+<p>B. 462 cm2
+</p>
+<p>C. 498.35 cm2
+</p>
+<p>D. None of these
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun3()" >Show Answer</button>
+<div id="d3" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+h = 14 cm, r = 7 cm.
+
+
+<br>
+
+So, l = root ((7)2 + (14)2) = root(245) = 7root(5) cm.
+<br>
+Total surface area	= pi rl + pi r2
+
+<br>
+=	(22/7 x 7 x 7root5 +	22/7 x 7 x 7)cm2
+<br>
+= [154(root5 + 1)] cm2
+<br>
+= (154 x 3.236) cm2
+<br>
+= 498.35 cm2.
+<br>
+
+
+</p></div>
+<hr></hr>
+
+<p><b>
+4.
+A large cube is formed from the material obtained by melting three smaller cubes of 3, 4 and 5 cm side. What is the ratio of the total surface areas of the smaller cubes and the large cube?</b>
+</p>
+<p>A. 2:1
+</p>
+<p>B. 3:2
+</p>
+<p>C. 25:18
+</p>
+<p>D. 27:20
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun4()" >Show Answer</button>
+<div id="d4" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option B<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Volume of the large cube = (33 + 43 + 53) = 216 cm3.
+<br>
+Let the edge of the large cube be a.
+<br>
+So, a3 = 216          a = 6 cm.
+
+  <br>
+
+</p></div>
+<hr></hr>
+
+<p><b>
+5.How many bricks, each measuring 25 cm x 11.25 cm x 6 cm, will be needed to build a wall of 8 m x 6 m x 22.5 cm?</b>
+</p>
+<p>A. 5600
+</p>
+<p>B. 6000
+</p>
+<p>C. 6400
+
+</p>
+<p>D. 7200
+
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun5()" >Show Answer</button>
+<div id="d5" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+By the rule of alligation:
+
+
+<br>
+
+Number of bricks =	Volume of the wall/Volume of 1 brick	=		800 x 600 x 22.5/(25 x 11.25 x 6)		= 6400.
+	
+<br>
+</p></div>
+<hr></hr>
+</div>
+
+
+ 
+           
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

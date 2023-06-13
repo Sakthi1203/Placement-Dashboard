@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitude</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: Georgia, 'Times New Roman', Times, serif}
+.btn{
+background-color: papayawhip;
+border-color:black;
+}
+.w_panel
+{
+margin:0px 0px 0px 100px;
+}
+.w_panel p{
+line-height:32px;
+}
+.w_panel h2{
+padding:25px 0px 0px 0px;
+}
+
+</style>
+<script>
+function Fun1() {
+  var x = document.getElementById("d1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun2() {
+  var x = document.getElementById("d2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun3() {
+  var x = document.getElementById("d3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun4() {
+  var x = document.getElementById("d4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun5() {
+  var x = document.getElementById("d5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right" style="font-size: 28pxpx;">Questions</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="Cprogram.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-history fa-fw"></i>Coding</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<div class="w_panel">
+<h2>Time and Work- General Questions</h2>
+
+<p><b>
+1.A can do a certain work in the same time in which B and C together can do it. If A and B together could do it in 10 days and C alone in 50 days, then B alone could do it in:</b></p>
+<p>A.15 days</p>
+<p>B.20 days</p>
+<p>C.25 days</p>
+<p>D.30 days	</p>
+<button type="button" class="btn btn-primary" onclick="Fun1()" >Show Answer</button>
+<div id="d1" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+(A + B)'s 1 day's work =	1/10
+<br>C's 1 day's work =	1/50
+<br>(A + B + C)'s 1 day's work =		1/50	+	1	/50	=	6/50	=	3/25	. .... (i)
+<br>A's 1 day's work = (B + C)'s 1 day's work .... (ii)
+<br>From (i) and (ii), we get: 2 x (A's 1 day's work) =	3/25
+<br> A's 1 day's work =	3/50	.
+<br> B's 1 day's work		1/10	-	3	/50	=	2/50	=	1/25	.
+<br>So, B alone could do the work in 25 days.
+</p></div>
+<hr></hr>
+
+<p><b>
+2.4 men and 6 women can complete a work in 8 days, while 3 men and 7 women can complete it in 10 days. In how many days will 10 women complete it?
+</b>
+</p>
+<p>A.35
+</p>
+<p>B.40
+</p>
+<p>C.45
+</p>
+<p>D.50
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun2()" >Show Answer</button>
+<div id="d2" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option B<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+ <p>
+  Let 1 man's 1 day's work = x and 1 woman's 1 day's work = y.
+ <br>
+ Then, 4x + 6y =	1/8	and 3x + 7y =	1/10	.
+  <br>
+  Solving the two equations, we get: x =	11/400	, y =	1/400
+<br><br>
+1 woman's 1 day's work =	1/400	.
+<br>10 women's 1 day's work =		1/400	x 10		=	1	/40.
+<br>Hence, 10 women will complete the work in 40 days.
+
+
+ </p></div>
+<hr></hr>
+
+<p><b>
+3.A and B can together finish a work 30 days. They worked together for 20 days and then B left. After another 20 days, A finished the remaining work. In how many days A alone can finish the work?	</b></p>
+<p>A.40
+</p>
+<p>B.50	
+</p>
+<p>C.54
+</p>
+<p>D.60
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun3()" >Show Answer</button>
+<div id="d3" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option D<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+(A + B)'s 20 day's work =	(	1/30	x 20	)	=	2	/3.
+<br>
+Remaining work =	(	1 -	2/3	)	=	1/3	.
+<br>Now,	1/3	work is done by A in 20 days.
+<br>Therefore, the whole work will be done by A in (20 x 3) = 60 days.
+</p></div>
+<hr></hr>
+
+<p><b>
+4.10 women can complete a work in 7 days and 10 children take 14 days to complete the work. How many days will 5 women and 10 children take to complete the work?</b>
+</p>
+<p>A.3
+</p>
+<p>B.5
+
+
+</p>
+<p>C.7
+
+</p>
+<p>D.Cannot be determined
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun4()" >Show Answer</button>
+<div id="d4" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+1 woman's 1 day's work =	1/70
+<br>1 child's 1 day's work =	1/140
+<br>5 women + 10 children)'s day's work =		5	/70+	10/140		=		1/14	+	1	/14	=	1/7
+<br>5 women and 10 children will complete the work in 7 days.
+</p></div>
+<hr></hr>
+
+<p><b>
+5.Ravi and Kumar are working on an assignment. Ravi takes 6 hours to type 32 pages on a computer, while Kumar takes 5 hours to type 40 pages. How much time will they take, working together on two different computers to type an assignment of 110 pages?
+</b>
+</p>
+<p>A.7 hours 30 minutes	
+</p>
+<p>B.8 hours	
+</p>
+<p>C.8 hours 15 minutes
+</p>
+<p>D.8 hours 25 minutes
+
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun5()" >Show Answer</button>
+<div id="d5" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Number of pages typed by Ravi in 1 hour =	32/6	=	16/3	.
+<br>
+Number of pages typed by Kumar in 1 hour =	40/5	= 8.
+<br>Number of pages typed by both in 1 hour =	(	16/3	+ 8	)	=	40/3	.
+<br>Time taken by both to type 110 pages =	(	110 x	3/40	)	hours
+<br>8*1/4	hours (or) 8 hours 15 minutes.
+</p></div>
+<hr></hr>
+</div>
+
+
+ 
+           
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

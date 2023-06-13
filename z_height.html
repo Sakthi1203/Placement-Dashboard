@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitude</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: Georgia, 'Times New Roman', Times, serif}
+.btn{
+background-color: papayawhip;
+border-color:black;
+}
+.w_panel
+{
+margin:0px 0px 0px 100px;
+}
+.w_panel p{
+line-height:32px;
+}
+.w_panel h2{
+padding:25px 0px 0px 0px;
+}
+
+</style>
+<script>
+function Fun1() {
+  var x = document.getElementById("d1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun2() {
+  var x = document.getElementById("d2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun3() {
+  var x = document.getElementById("d3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun4() {
+  var x = document.getElementById("d4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun5() {
+  var x = document.getElementById("d5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right" style="font-size: 28pxpx;">Questions</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="Cprogram.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-history fa-fw"></i>Coding</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<div class="w_panel">
+<h2>Height and Distance- General Questions</h2>
+
+<p><b>
+1.If an object travels at five feet per second, how many feet does it travel in one hour?</b></p>
+<p>A.30</p>
+<p>B.3000</p>
+<p>C.18	</p>
+<p>D.1800	</p>
+<button type="button" class="btn btn-primary" onclick="Fun1()" >Show Answer</button>
+<div id="d1" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option D<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+If an object travels at 5 feet per second it covers 5x60 feet in one minute, and 5x60x60 feet in one hour.
+
+<br>
+
+Answer = 1800 
+
+ </p></div>
+<hr></hr>
+
+<p><b>
+2.A vertical toy 18 cm long casts a shadow 8 cm long on the ground. At the same time a pole casts a shadow 48 m. long on the ground. Then find the height of the pole ?
+
+</b>
+</p>
+<p>A.1080 cm	
+</p>
+<p>B.180 m	
+</p>
+<p>C.	108 m
+</p>
+<p>D.118 cm
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun2()" >Show Answer</button>
+<div id="d2" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+ <p>
+  At particular time for all object , ratio of height and shadow are same.
+  <br>
+  Let the height of the pole be 'H'
+<br>
+Then
+18/8=H/48
+<br><br>
+H = 108 m.
+ </p></div>
+<hr></hr>
+
+<p><b>
+3.A flagstaff 17.5 m high casts a shadow of length 40.25 m. What will be the height of a building, which casts a shadow of length 28.75 m under similar conditions ?  	</b></p>
+<p>A.	14 cm
+</p>
+<p>B.	13.5 cm
+</p>
+<p>C.	12.5 cm
+</p>
+<p>D.	 11.4 cm
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun3()" >Show Answer</button>
+<div id="d3" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Let the required height of the building be x meter
+
+More shadow length, More height(direct proportion)
+
+Hence we can write as
+<br>
+(shadow length) 40.25 : 28.75 :: 17.5 : x
+<br>40.25 × x = 28.75 × 17.5
+<br>x = 28.75 × 17.5/40.25
+<br>2875 × 175/40250
+<br> 2875 × 7/1610
+<br>2875/230
+<br> 575/46
+<br>12.5 cm
+</p></div>
+<hr></hr>
+
+<p><b>
+4.A man standing at a point P is watching the top of a tower, which makes an angle of elevation of 30º with the man's eye. The man walks some distance towards the tower to watch its top and the angle of the elevation becomes 60º. What is the distance between the base of the tower and the point P?	</b>
+</p>
+<p>A.Data inadequate
+</p>
+<p>B.8 units	
+
+</p>
+<p>C.12 units
+</p>
+<p>D.None of these	
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun4()" >Show Answer</button>
+<div id="d4" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option A<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+One of AB, AD and CD must have given.
+
+<br>So, the data is inadequate
+</p></div>
+<hr></hr>
+
+<p><b>
+5.	
+An observer 1.6 m tall is 203–√away from a tower. The angle of elevation from his eye to the top of the tower is 30º. The heights of the tower is:
+
+</b>
+</p>
+<p>A.	21.6 m
+</p>
+<p>B.	23.2 m
+</p>
+<p>C.	 24.72 m
+</p>
+<p>D.	 None of these
+
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun5()" >Show Answer</button>
+<div id="d5" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option A<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+
+Draw BE // CD
+<br>
+Then, CE = AB = 1.6 m,
+<br>BE = AC =DE/tan30
+<br>DE = tan30 x 203–√3=> DE = 13√3x203–√3= 20
+<br>Therefore, CD = CE + DE = (1.6 + 20) m = 21.6 m.
+</p></div>
+<hr></hr>
+</div>
+
+
+ 
+           
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

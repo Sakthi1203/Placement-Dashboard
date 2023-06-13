@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitude</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: Georgia, 'Times New Roman', Times, serif}
+.btn{
+background-color: papayawhip;
+border-color:black;
+}
+.w_panel
+{
+margin:0px 0px 0px 100px;
+}
+.w_panel p{
+line-height:32px;
+}
+.w_panel h2{
+padding:25px 0px 0px 0px;
+}
+
+</style>
+<script>
+function Fun1() {
+  var x = document.getElementById("d1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun2() {
+  var x = document.getElementById("d2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun3() {
+  var x = document.getElementById("d3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun4() {
+  var x = document.getElementById("d4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun5() {
+  var x = document.getElementById("d5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right" style="font-size: 28pxpx;">Questions</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="Cprogram.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-history fa-fw"></i>Coding</a>
+    
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<div class="w_panel">
+<h2>Simple Interest - General Questions</h2>
+
+<p><b>
+1.A sum of money at simple interest amounts to Rs. 815 in 3 years and to Rs. 854 in 4 years. The sum is:</b></p>
+<p>A.Rs. 650</p>
+<p>B.Rs. 690</p>
+<p>C.Rs. 698	</p>
+<p>D.Rs. 700	</p>
+<button type="button" class="btn btn-primary" onclick="Fun1()" >Show Answer</button>
+<div id="d1" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+S.I. for 1 year = Rs. (854 - 815) = Rs. 39.
+<br>S.I. for 3 years = Rs.(39 x 3) = Rs. 117.
+<br>Principal = Rs. (815 - 117) = Rs. 698.
+ </p></div>
+<hr></hr>
+
+<p><b>
+2.Mr. Thomas invested an amount of Rs. 13,900 divided in two different schemes A and B at the simple interest rate of 14% p.a. and 11% p.a. respectively. If the total amount of simple interest earned in 2 years be Rs. 3508, what was the amount invested in Scheme B?
+</b>
+</p>
+<p>A.Rs. 6400
+</p>
+<p>B.Rs. 6500
+</p>
+<p>C.Rs. 7200	
+</p>
+<p>D.Rs. 7500
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun2()" >Show Answer</button>
+<div id="d2" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option A<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+ <p>
+  Let the sum invested in Scheme A be Rs. x and that in Scheme B be Rs. (13900 - x).
+  <br>
+  Then,		x x 14 x 2/100		+		(13900 - x) x 11 x 2/100		= 3508
+  <br>
+  28x - 22x = 350800 - (13900 x 22)
+<br><br>
+6x = 45000
+<br>x = 7500.
+<br>So, sum invested in Scheme B = Rs. (13900 - 7500) = Rs. 6400.
+ </p></div>
+<hr></hr>
+
+<p><b>
+3.A sum fetched a total simple interest of Rs. 4016.25 at the rate of 9 p.c.p.a. in 5 years. What is the sum?	</b></p>
+<p>A.Rs. 4462.50	
+</p>
+<p>B.Rs. 8032.50	
+</p>
+<p>C.Rs. 8900	
+</p>
+<p>D.Rs. 8925	 
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun3()" >Show Answer</button>
+<div id="d3" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option D<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Principal	
+= Rs.		100 x 4016.25	/9*5
+<br>
+= Rs.		401625/45	
+
+<br>= Rs. 8925.
+
+</p></div>
+<hr></hr>
+
+<p><b>
+4.How much time will it take for an amount of Rs. 450 to yield Rs. 81 as interest at 4.5% per annum of simple interest?</b>
+</p>
+<p>A.3.5 years
+</p>
+<p>B.4 years
+
+
+</p>
+<p>C.4.5 years
+
+</p>
+<p>D.5 years
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun4()" >Show Answer</button>
+<div id="d4" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option B<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Time =		100 x 81/450*4.5	years	= 4 years.
+
+</p></div>
+<hr></hr>
+
+<p><b>
+5.	
+An automobile financier claims to be lending money at simple interest, but he includes the interest every six months for calculating the principal. If he is charging an interest of 10%, the effective rate of interest becomes:
+
+</b>
+</p>
+<p>A.	10%
+</p>
+<p>B.	10.25%
+</p>
+<p>C.10.5%
+</p>
+<p>D.None of these
+
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun5()" >Show Answer</button>
+<div id="d5" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option B<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Let the sum be Rs. 100. Then,
+<br>
+S.I. for first 6 months = Rs.		100 x 10 x 1/100*2		= Rs. 5
+<br>S.I. for last 6 months = Rs.		105 x 10 x 1/100*2		= Rs. 5.25
+<br>DE = So, amount at the end of 1 year = Rs. (100 + 5 + 5.25) = Rs. 110.25
+<br>Effective rate = (110.25 - 100) = 10.25%
+</p></div>
+<hr></hr>
+</div>
+
+
+ 
+           
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

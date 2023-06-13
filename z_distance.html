@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitude</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: Georgia, 'Times New Roman', Times, serif}
+.btn{
+background-color: papayawhip;
+border-color:black;
+}
+.w_panel
+{
+margin:0px 0px 0px 100px;
+}
+.w_panel p{
+line-height:32px;
+}
+.w_panel h2{
+padding:25px 0px 0px 0px;
+}
+
+</style>
+<script>
+function Fun1() {
+  var x = document.getElementById("d1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun2() {
+  var x = document.getElementById("d2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun3() {
+  var x = document.getElementById("d3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun4() {
+  var x = document.getElementById("d4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun5() {
+  var x = document.getElementById("d5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right" style="font-size: 28pxpx;">Questions</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="Cprogram.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-address-book"></i>Coding</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<div class="w_panel">
+<h2>Time and distance- General Questions</h2>
+
+<p><b>
+1.
+In covering a distance of 30 km, Abhay takes 2 hours more than Sameer. If Abhay doubles his speed, then he would take 1 hour less than Sameer. Abhay's speed is:</b>
+<p>A. 5kmph</p>
+<p>B. 6kmph</p>
+<p>C. 6.25kmph</p>
+<p>D. 7.5kmph</p>
+<button type="button" class="btn btn-primary" onclick="Fun1()" >Show Answer</button>
+<div id="d1" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Let Abhay's speed be x km/hr.
+<br>
+Then,	30/x	-	30/2x	= 3
+<br>
+ 6x = 30
+<br>
+ x = 5 km/hr.
+
+<br>
+ </p></div>
+<hr></hr>
+
+<p><b>
+2.
+Robert is travelling on his cycle and has calculated to reach point A at 2 P.M. if he travels at 10 kmph, he will reach there at 12 noon if he travels at 15 kmph. At what speed must he travel to reach A at 1 P.M.?</b>
+</p>
+<p>A. 8kmph
+</p>
+<p>B. 11kmph
+</p>
+<p>C. 12kmph
+</p>
+<p>D. 14 kmph
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun2()" >Show Answer</button>
+<div id="d2" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+ <p>Let the distance travelled by x km.
+<br>
+
+Then,	x/10	-	x/15	= 2
+<br>
+ 3x - 2x = 60
+<br>
+ x = 60 km.
+<br>
+Time taken to travel 60 km at 10 km/hr =		960/10)	hrs	= 6 hrs.
+<br>
+So, Robert started 6 hours before 2 P.M. i.e., at 8 A.M.
+<br>
+ Required speed =		60/5	kmph.	= 12 kmph.
+<br>
+
+
+
+
+
+
+ 
+</p></div>
+<hr></hr>
+
+<p><b>
+3.
+It takes eight hours for a 600 km journey, if 120 km is done by train and the rest by car. It takes 20 minutes more, if 200 km is done by train and the rest by car. The ratio of the speed of the train to that of the cars is:</b></p>
+<p>A. 2:3
+</p>
+<p>B. 3:2
+</p>
+<p>C. 3:4
+</p>
+<p>D.4:3
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun3()" >Show Answer</button>
+<div id="d3" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Let the speed of the train be x km/hr and that of the car be y km/hr.
+<br>
+
+Then,	120/x	+	480/y	= 8    -->   	1/x	+	4/y	=	1/15	....(i)
+
+<br>
+And,	200/x	+	400/y	=	25/3 --->	    	1/x	+	2/y	=	1/24	....(ii)
+
+<br>
+Solving (i) and (ii), we get: x = 60 and y = 80.
+<br>
+ Ratio of speeds = 60 : 80 = 3 : 4.
+
+<br>
+
+So, l = root ((7)2 + (14)2) = root(245) = 7root(5) cm.
+<br>
+Total surface area	= pi rl + pi r2
+
+<br>
+=	(22/7 x 7 x 7root5 +	22/7 x 7 x 7)cm2
+<br>
+= [154(root5 + 1)] cm2
+<br>
+= (154 x 3.236) cm2
+<br>
+= 498.35 cm2.
+<br>
+
+
+</p></div>
+<hr></hr>
+
+<p><b>
+4.A farmer travelled a distance of 61 km in 9 hours. He travelled partly on foot @ 4 km/hr and partly on bicycle @ 9 km/hr. The distance travelled on foot is:</b>
+</p>
+<p>A. 14 km
+</p>
+<p>B. 15 km
+</p>
+<p>C. 16 km
+</p>
+<p>D. 17 km
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun4()" >Show Answer</button>
+<div id="d4" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option B<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Let the distance travelled on foot be x km.
+<br>
+Then, distance travelled on bicycle = (61 -x) km.
+<br>
+So,	x/4	+	(61 -x)/9	= 9
+
+<br> 9x + 4(61 -x) = 9 x 36
+
+<br> 5x = 80
+
+<br> x = 16 km.
+<br>
+
+</p></div>
+<hr></hr>
+
+<p><b>
+5.
+A man covered a certain distance at some speed. Had he moved 3 kmph faster, he would have taken 40 minutes less. If he had moved 2 kmph slower, he would have taken 40 minutes more. The distance (in km) is:</b>
+</p>
+<p>A. 35
+</p>
+<p>B. 36 2/3
+</p>
+<p>C. 37 1/2
+
+</p>
+<p>D. 40
+
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun5()" >Show Answer</button>
+<div id="d5" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Let distance = x km and usual rate = y kmph.
+<br>
+
+Then,	x/y	-	x/(y+3)	=	40/60	 -->    2y(y + 3) = 9x ....(i)
+y	y + 3	60
+<br>
+And,	x/(y-2)	-	x/y	=	40/60	 -->    y(y - 2) = 3x ....(ii)
+
+<br>
+On dividing (i) by (ii), we get: x = 40.
+<br>
+
+Number of bricks =	Volume of the wall/Volume of 1 brick	=		800 x 600 x 22.5/(25 x 11.25 x 6)		= 6400.
+	
+<br>
+</p></div>
+<hr></hr>
+</div>
+
+
+ 
+           
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

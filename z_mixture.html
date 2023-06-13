@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitude</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: Georgia, 'Times New Roman', Times, serif}
+.btn{
+background-color: papayawhip;
+border-color:black;
+}
+.w_panel
+{
+margin:0px 0px 0px 100px;
+}
+.w_panel p{
+line-height:32px;
+}
+.w_panel h2{
+padding:25px 0px 0px 0px;
+}
+
+</style>
+<script>
+function Fun1() {
+  var x = document.getElementById("d1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun2() {
+  var x = document.getElementById("d2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun3() {
+  var x = document.getElementById("d3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun4() {
+  var x = document.getElementById("d4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun5() {
+  var x = document.getElementById("d5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right" style="font-size: 28pxpx;">Questions</span>
+</div>
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="Cprogram.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>Coding</a>
+  </div>
+</nav>
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<div class="w_panel">
+<h2>Mixture and Alligation - General Questions</h2>
+
+<p><b>
+1.	A vessel is filled with liquid, 3 parts of which are water and 5 parts syrup. How much of the mixture must be drawn off and replaced with water so that the mixture may be half water and half syrup?</b></p>
+<p>A.	1/3</p>
+<p>B.	1/4</p>
+<p>C.	1/5</p>
+<p>D.	1/7</p>
+<button type="button" class="btn btn-primary" onclick="Fun1()" >Show Answer</button>
+<div id="d1" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Suppose the vessel initially contains 8 litres of liquid.
+
+
+<br>
+
+Let x litres of this liquid be replaced with water.
+
+
+<br>
+
+Quantity of water in new mixture =		3 -	(3x/8)	+ x		litres
+
+
+<br>
+Quantity of syrup in new mixture =		5 -	5x/8		litres
+<br>
+		3 -	3x/8	+ x		=		5 -	5x	/8
+<br>
+5x + 24 = 40 - 5x<br> x= 8/5<br>
+
+So, part of the mixture replaced =		8/5	x	1/8		=	1/5.
+
+ </p></div>
+<hr></hr>
+
+<p><b>
+2.	Tea worth Rs. 126 per kg and Rs. 135 per kg are mixed with a third variety in the ratio 1 : 1 : 2. If the mixture is worth Rs. 153 per kg, the price of the third variety per kg will be:</b>
+</p>
+<p>A.	Rs. 169.50
+</p>
+<p>B.	Rs. 170
+</p>
+<p>C.	Rs. 175.50
+</p>
+<p>D.	Rs. 180
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun2()" >Show Answer</button>
+<div id="d2" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+ <p>
+Since first and second varieties are mixed in equal proportions.
+
+
+<br>
+	
+So, their average price = Rs.		(126 + 135)/2		= Rs. 130.50
+
+<br>
+So, the mixture is formed by mixing two varieties, one at Rs. 130.50 per kg and the other at say, Rs. x per kg in the ratio 2 : 2, i.e., 1 : 1. We have to find x.
+<br><br>
+		 	(x - 153)/22.50	= 1
+		 <br>
+		  x - 153 = 22.50
+
+<br>
+ x = 175.50
+
+
+
+
+
+ 
+</p></div>
+<hr></hr>
+
+<p><b>
+3.	A can contains a mixture of two liquids A and B is the ratio 7 : 5. When 9 litres of mixture are drawn off and the can is filled with B, the ratio of A and B becomes 7 : 9. How many litres of liquid A was contained by the can initially?</b></p>
+<p>A.	10
+</p>
+<p>B.	20
+</p>
+<p>C.	21
+</p>
+<p>D.	25
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun3()" >Show Answer</button>
+<div id="d3" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Suppose the can initially contains 7x and 5x of mixtures A and B respectively.
+
+
+
+<br>
+Quantity of A in mixture left =		7x -	7/12	x 9		litres =		7x -	21/4	 litres
+<br>
+Quantity of B in mixture left =		5x -	5/12	x 9		litres =		5x -	15/4	 litres.
+
+
+<br>
+A/B = 7/9
+<br>
+28x-21/20x+21 = 7/9<br>112x = 336<br>x = 3<br>So, the can contained 21 litres of A.
+
+
+</p></div>
+<hr></hr>
+
+<p><b>
+4.	A milk vendor has 2 cans of milk. The first contains 25% water and the rest milk. The second contains 50% water. How much milk should he mix from each of the containers so as to get 12 litres of milk such that the ratio of water to milk is 3 : 5?</b>
+</p>
+<p>A.	4 litres, 8 litres
+</p>
+<p>B.	6 litres, 6 litres
+</p>
+<p>C.	5 litres, 7 litres
+</p>
+<p>D.	7 litres, 5 litres
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun4()" >Show Answer</button>
+<div id="d4" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option B<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Let the cost of 1 litre milk be Re. 1
+
+
+<br>Milk in 1 litre mix. in 1st can =	3/4	litre, C.P. of 1 litre mix. in 1st can Re.	3/4
+<br>
+Milk in 1 litre mix. in 2nd can =	1/2	litre, C.P. of 1 litre mix. in 2nd can Re.	1/2
+
+
+	<br>
+Milk in 1 litre of final mix. =	5/8	litre, Mean price = Re.	5/8
+
+
+<br>
+Therefore Ratio of two mixtures =	1/8	:	1/8	= 1 : 1. 
+<br>So, quantity of mixture taken from each can =		1/2	x 12		= 6 litres.
+
+
+</p></div>
+<hr></hr>
+
+<p><b>
+5.	
+In what ratio must a grocer mix two varieties of pulses costing Rs. 15 and Rs. 20 per kg respectively so as to get a mixture worth Rs. 16.50 kg?</b>
+</p>
+<p>A.	3:7
+</p>
+<p>B.	5:7
+</p>
+<p>C.	7:3
+</p>
+<p>D.	7:5
+
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun5()" >Show Answer</button>
+<div id="d5" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+By the rule of alligation:
+
+
+<br>
+Cost of 1 kg pulses of 1st kindCost of 1 kg pulses of 2nd kind<br>
+ Required rate = 3.50 : 1.50 = 7 : 3.
+
+
+</p></div>
+<hr></hr>
+</div>
+
+
+ 
+           
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

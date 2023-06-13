@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitude</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: Georgia, 'Times New Roman', Times, serif}
+.btn{
+background-color: papayawhip;
+border-color:black;
+}
+.w_panel
+{
+margin:0px 0px 0px 100px;
+}
+.w_panel p{
+line-height:32px;
+}
+.w_panel h2{
+padding:25px 0px 0px 0px;
+}
+
+</style>
+<script>
+function Fun1() {
+  var x = document.getElementById("d1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun2() {
+  var x = document.getElementById("d2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun3() {
+  var x = document.getElementById("d3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun4() {
+  var x = document.getElementById("d4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}function Fun5() {
+  var x = document.getElementById("d5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right" style="font-size: 28pxpx;">Questions</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="Cprogram.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>Coding</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<div class="w_panel">
+<h2>Average - General Questions</h2>
+
+<p><b>
+1. The average salary of male employees in a firm was Rs. 6000 and that of females was Rs. 5600. The mean salary of all the employees was Rs. 5800. What is the % of female employees?</b></p>
+<p>A.	60%</p>
+<p>B.	50%</p>
+<p>C.	70%</p>
+<p>D.	20%</p>
+<button type="button" class="btn btn-primary" onclick="Fun1()" >Show Answer</button>
+<div id="d1" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option B<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Average salary of male employees = Rs. 6000<br>
+Average salary of female employees = Rs. 5600<br>
+Mean salary = Rs. 5800<br>
+By using alligation<br>
+6000-5800=200 && 5600-5800=200
+<br>
+∴ The ratio of male : female = 200 : 200 = 1 : 1<br>
+Hence, % of female employees = 	1/2	 × 100 = 50%
+
+ </p></div>
+<hr></hr>
+
+<p><b>
+2.	Bala travels forst one-third of the total distance at the speed of 10kmph and the next one-third distance at the speed of 20kmph and the last one-third distance at the speed of 60kmph. What is the average spped of bala?</b>
+</p>
+<p>A.	18kmph
+</p>
+<p>B.	19kmph
+</p>
+<p>C.	16kmph
+</p>
+<p>D.	12kmph
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun2()" >Show Answer</button>
+<div id="d2" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option A<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+ <p>
+= 3 * 10 * 20 * 60/(200 + 1200 + 600)<br>
+= 18kmph 
+</p></div>
+<hr></hr>
+<p><b>
+3.  The average weight of 20 students in a class is increased by 0.75 kg when one student of 35 kg replaced by a new student weight of the new student (in kg) is:
+</b></p>
+<p>A.	35
+</p>
+<p>B.	40
+</p>
+<p>C.	45
+</p>
+<p>D.	50
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun3()" >Show Answer</button>
+<div id="d3" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option D<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Let average age of 20 students=a
+<br>
+Sum of age of 20 students=20a
+<br>
+Old student weight=35
+<br>
+New student weight =n
+<br>
+New average weight=a+0.75
+<br>(20a-35+n)/20=a+0.75<br>n=50<br>
+</p></div>
+<hr></hr>
+
+<p><b>
+4.	A milk vendor has 2 cans of milk. The first contains 25% water and the rest milk. The second contains 50% water. How much milk should he mix from each of the containers so as to get 12 litres of milk such that the ratio of water to milk is 3 : 5?</b>
+</p>
+<p>A.	4 litres, 8 litres
+</p>
+<p>B.	6 litres, 6 litres
+</p>
+<p>C.	5 litres, 7 litres
+</p>
+<p>D.	7 litres, 5 litres
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun4()" >Show Answer</button>
+<div id="d4" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option B<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+Let the cost of 1 litre milk be Re. 1
+
+
+<br>Milk in 1 litre mix. in 1st can =	3/4	litre, C.P. of 1 litre mix. in 1st can Re.	3/4
+<br>
+Milk in 1 litre mix. in 2nd can =	1/2	litre, C.P. of 1 litre mix. in 2nd can Re.	1/2
+
+
+	<br>
+Milk in 1 litre of final mix. =	5/8	litre, Mean price = Re.	5/8
+
+
+<br>
+Therefore Ratio of two mixtures =	1/8	:	1/8	= 1 : 1. 
+<br>So, quantity of mixture taken from each can =		1/2	x 12		= 6 litres.
+
+
+</p></div>
+<hr></hr>
+
+<p><b>
+5.	
+In what ratio must a grocer mix two varieties of pulses costing Rs. 15 and Rs. 20 per kg respectively so as to get a mixture worth Rs. 16.50 kg?</b>
+</p>
+<p>A.	3:7
+</p>
+<p>B.	5:7
+</p>
+<p>C.	7:3
+</p>
+<p>D.	7:5
+
+</p>
+<button type="button" class="btn btn-primary" onclick="Fun5()" >Show Answer</button>
+<div id="d5" style="display:none">
+<p><label style="color:green;font-weight:bold">Answer:</label> Option C<br>
+<label style="color:green;font-weight:bold">Explanation:</label><br>
+
+By the rule of alligation:
+
+
+<br>
+Cost of 1 kg pulses of 1st kindCost of 1 kg pulses of 2nd kind<br>
+ Required rate = 3.50 : 1.50 = 7 : 3.
+
+
+</p></div>
+<hr></hr>
+</div>
+
+
+ 
+           
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
